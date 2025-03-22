@@ -1,80 +1,14 @@
-//MENU
-//Programa de seleccion para cualquiera de los 30 programas creados
+// Programa que contiene un menu con funciones y procedimientos
 
 #include <iostream>
 using namespace std;
 
-int ejercicio1();
-int ejercicio2();
-int ejercicio3();
-int ejercicio4();
-int ejercicio5();
-int ejercicio6();
-int ejercicio7();
-int ejercicio8();
-int ejercicio9();
-int ejercicio10();
-int ejercicio11();
-int ejercicio12();
-int ejercicio13();
-int ejercicio14();
-int ejercicio15();
-int ejercicio16();
-int ejercicio17();
-int ejercicio18();
-int ejercicio19();
-int ejercicio20();
-int ejercicio21();
-int ejercicio22();
-int ejercicio23();
-int ejercicio24();
-int ejercicio25();
-int ejercicio26();
-int ejercicio27();
-int ejercicio28();
-int ejercicio29();
-int ejercicio30();
-
-int Menu(int ejercicio) {
-     switch (ejercicio) {
-         case 1: return ejercicio1();
-         case 2: return ejercicio2();
-         case 3: return ejercicio3();
-         case 4: return ejercicio4();
-         case 5: return ejercicio5();
-         case 6: return ejercicio6();
-         case 7: return ejercicio7();
-         case 8: return ejercicio8();
-         case 9: return ejercicio9();
-         case 10: return ejercicio10();
-         case 11: return ejercicio11();
-         case 12: return ejercicio12();
-         case 13: return ejercicio13();
-         case 14: return ejercicio14();
-         case 15: return ejercicio15();
-         case 16: return ejercicio16();
-         case 17: return ejercicio17();
-         case 18: return ejercicio18();
-         case 19: return ejercicio19();
-         case 20: return ejercicio20();
-         case 21: return ejercicio21();
-         case 22: return ejercicio22();
-         case 23: return ejercicio23();
-         case 24: return ejercicio24();
-         case 25: return ejercicio25();
-         case 26: return ejercicio26();
-         case 27: return ejercicio27();
-         case 28: return ejercicio28();
-         case 29: return ejercicio29();
-         case 30: return ejercicio30();
-         default: cout<<"La opcion no existe"<<endl;
-         return -1;
-     }
-}
-
-int ejercicio1() {
+//programa que utiliza el procedimiento void
+void ejercicio1() {
     double number;
-    cout<<"Ejercicio 1 IF-ELSE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Identifica si el numero es positivo, negativo o 0"<<endl;
     cout <<"Ingresa un numero: "<<endl;
     cin >> number;
 
@@ -89,21 +23,29 @@ int ejercicio1() {
         cout<<"El numero ingresado es 0"<<endl;
     }
 }
-int ejercicio2() {
-    int n;
-    cout<<"Ejercicio 2 IF-ELSE"<<endl;
-    cout << "Ingrese un numero: "<<endl;
-    cin>>n;
+ //programa con void
 
-    if (n % 2 == 0) {
-        cout << "El numero " << n <<" es par"<<endl;
+void ejercicio2() {
+    int n;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determina si el numero es par o impar"<<endl;
+    cout <<"Ingrese un numero: "<<endl;
+    cin >> n;
+
+    if (n % 2==0) {
+        cout <<"El nuermo "<<n<<" es par"<<endl;
     } else {
-        cout << "El numero " << n <<" es impar"<<endl;
+        cout <<"El numero "<<n<<" es impar"<<endl;
     }
 }
+
+//ejercicio utilizando la funcion int
 int ejercicio3() {
     int a, b, c;
-    cout<<"Ejercicio 3 IF-ELSE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determine el numero mayor"<<endl;
     cout<<"Digite tres numeros: "<<endl;
     cin>>a>>b>>c;
 
@@ -118,11 +60,15 @@ int ejercicio3() {
             cout << "El numero " << c << " es el mayor" << endl;
         }
     }
+    return 0;
 }
-int ejercicio4() {
+
+//ejercicio con procedimiento void
+void ejercicio4() {
     int año;
-    cout<<"Ejercicio 4 IF-ELSE"<<endl;
-    cout<<"El año es bisiesto o no"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determine si el año es bisiesto o no"<<endl;
     cout<<"Escriba el año que desea: "<<endl;
     cin >> año;
 
@@ -132,9 +78,12 @@ int ejercicio4() {
         cout <<"El año "<<año<<" es bisiesto tiene 366 dias"<<endl;
     }
 }
-int ejercicio5() {
+//ejercicio con procedimiento void
+void ejercicio5() {
     char letter;
-    cout<<"Ejercicio 5 IF-ELSE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determine si la letra es vocal o consonante"<<endl;
     cout <<"Digite una letra que deseas: "<<endl;
     cin>> letter;
 
@@ -144,9 +93,12 @@ int ejercicio5() {
         cout << "La letra "<< letter <<" es una consonante"<<endl;
     }
 }
+//ejercicio con funcion int
 int ejercicio6() {
     int cm;
-    cout<<"Ejercicio 6 IF-ELSE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Identifique si el numero es primo"<<endl;
     cout << "Ingrese el numero que desea: "<<endl;
     cin >> cm;
 
@@ -155,11 +107,14 @@ int ejercicio6() {
     } else {
         cout << "El numero " <<cm<< " es primo"<<endl;
     }
+    return 0;
 }
+//ejercicio con funcion int
 int ejercicio7() {
     int N;
-    cout<<"Ejercicio 7 IF-ELSE"<<endl;
-    cout <<"Verifique si es un año valido"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout <<"Verifique si es un año de nacimiento es valido"<<endl;
     cout << "Ingrese el año: "<<endl;
     cin >> N;
 
@@ -168,10 +123,14 @@ int ejercicio7() {
     } else {
         cout <<N<<" no es un año de nacimiento valido"<<endl;
     }
+    return 0;
 }
-int ejercicio8() {
+//ejercicio con void
+void ejercicio8() {
     int j;
-    cout<<"Ejercicio 8 IF-ELSE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Multiplo de 5 y 7"<<endl;
     cout<<"Por favor ingrese un numero: "<<endl;
     cin>>j;
 
@@ -185,9 +144,11 @@ int ejercicio8() {
         cout << "No es multiplo de 5 ni de 7"<<endl;
     }
 }
-int ejercicio9() {
+//ejercicio con procedimiento
+void ejercicio9() {
     int an;
-    cout<<"Ejercicio 9 IF-ELSE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     cout << "Determine su calificacion mediante su nota numerica de 0 - 100"<<endl;
     cout << "Ingrese su calificacion numerica: "<<endl;
     cin >> an;
@@ -206,9 +167,11 @@ int ejercicio9() {
         cout <<"Calificacion no valida, debe estar entre 0 y 100"<<endl;
     }
 }
-int ejercicio10() {
+//ejercicio con procedimiento
+void ejercicio10() {
     double precio0, PrecioDesc, PrecioFin;
-    cout<<"Ejercicio 10 IF-ELSE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     cout<<"Determine el precio con el descuento"<<endl;
     cout<<"Ingrese el precio: "<<endl;
     cin>>precio0;
@@ -227,8 +190,10 @@ int ejercicio10() {
         cout<<"El precio con descuento es:Q "<<PrecioFin<<endl;
     }
 }
-int ejercicio11() {
-    cout<<"Ejercicio 11 WHILE"<<endl;
+//ejercicio con procedimiento
+void ejercicio11() {
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Numeros 1-20 en forma ascendente"<<endl;
     int i=1;
     while (i<=20) {
         cout << i << " ";
@@ -236,9 +201,12 @@ int ejercicio11() {
     }
     cout<<endl;
 }
-int ejercicio12() {
+//ejercicio con void
+void ejercicio12() {
     int ut, i=1;
-    cout<<"Ejercicio 12 WHILE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determine todos los numeros hasta el que ingrese"<<endl;
     cout << "Ingrese un numero entero: "<<endl;
     cin>>ut;
 
@@ -252,9 +220,12 @@ int ejercicio12() {
         cout<<endl;
     }
 }
+//programa con int
 int ejercicio13() {
     int bl, suma=0;
-    cout<<"Ejercicio 13 WHILE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Sume numeros positivos"<<endl;
     cout<<"Ingrese un numero: "<<endl;
     cin>>bl;
 
@@ -266,10 +237,15 @@ int ejercicio13() {
     }
     cout<<"La suma de los numeros positivos es: "<<suma<<endl;
     cout<<"Se ha detectado un numero negativo";
+
+    return 0;
 }
-int ejercicio14() {
+//programa con void
+void ejercicio14() {
     int h, x=0, y=1, z=1;
-    cout<<"Ejercicio 14 WHILE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Secuencia de Fibonacci hasta el numero ingresado"<<endl;
     cout<<"Digite un numero: "<<endl;
     cin>>h;
 
@@ -282,26 +258,34 @@ int ejercicio14() {
     }
     cout<<"\n";
 }
+//programa con int
 int ejercicio15() {
     int rz, suma=0;
-    cout<<"Ejercicio 15 WHILE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Numeros que suman 100"<<endl;
     cout<<"Ingrese un numero positivo: "<<endl;
     cin>>rz;
 
     while (rz>=0) {
         if (suma + rz > 100) {
             cout << "La suma ha alcanzado el limite de 100." << endl;
-            break; // Salir porque alcanzo el limite
+            break;
         }
         suma+=rz;
         cout<<"Ingrese otro numero: "<<endl;
         cin>>rz;
     }
     cout<<"La suma es: "<<suma<<endl;
+
+    return 0;
 }
-int ejercicio16() {
+//programa con void
+void ejercicio16() {
     int MB, i=2;
-    cout<<"Ejercicio 16 WHILE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Todos los numeros pares hasta el ingresado"<<endl;
     cout<<"Ingrese un numero: "<<endl;
     cin>>MB;
 
@@ -310,33 +294,39 @@ int ejercicio16() {
         i+=2;
     }
 }
+//programa con int
 int ejercicio17() {
     double gm;
     double suma = 0.0;
     int contador = 0;
-    cout<<"Ejercicio 17 WHILE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"La media de una serie de numeros"<<endl;
     cout << "Ingresa 10 numeros:" << endl;
 
     // Bucle while para ingresar exactamente 10 números
     while (contador < 10) {
         cin >> gm;
 
-        // Sumar el número a la suma total y aumentar el contador
-        suma += gm; // Siempre sumamos el número
-        contador++;     // Incrementamos el contador
+        suma += gm;
+        contador++;
     }
 
     // Calculamos la media
     double media = suma / contador;
 
     cout << "La media de los numeros ingresados es: " << media << endl;
-}
 
-int ejercicio18() {
+    return 0;
+}
+//programa con void
+void ejercicio18() {
     int Y;
-    cout<<"Ejercicio 18 WHILE"<<endl;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Imprimime numeros y se detiene en 0"<<endl;
     cout << "Ingresa numeros (ingresa 0 para terminar):" << endl;
-    cin >> Y; // Leer el primer número antes del bucle
+    cin >> Y;
 
     while (Y != 0) {
         cout << "Ingresa otro numero: " << endl;
@@ -345,42 +335,50 @@ int ejercicio18() {
         cin >> Y;
     }
 }
-int ejercicio19() {
-    int i = 1; // Comenzamos desde el primer número natural
-    cout<<"Ejercicio 19 WHILE"<<endl;
+//programa con void
+void ejercicio19() {
+    int i = 1;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     cout << "Los primeros 10 numeros naturales y sus cuadrados son:" << endl;
 
 
     while (i <= 10) {
         cout << "Numero: " << i << ", Cuadrado: " << (i * i) << endl;
-        i++; // Incrementamos el número natural
+        i++;
     }
 }
+//prograrma con int
 int ejercicio20() {
-    int i = 1; // Comenzamos desde el primer número natural
-    int producto = 1; // Inicializamos el producto en 1
+    int i = 1;
+    int producto = 1;
 
-    cout<<"Ejercicio 20 WHILE"<<endl;
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     while (i <= 10) {
-        producto *= i; // Multiplicamos el producto por el número actual
-        i++; // Incrementamos el número natural
+        producto *= i;
+        i++;
     }
 
     cout << "El producto de los primeros 10 numeros naturales es: " << producto << endl;
+
+    return 0;
 }
-int ejercicio21() {
-    cout<<"Ejercicio 21 FOR"<<endl;
+//programa con void
+void ejercicio21() {
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     cout << "Los numeros pares del 2 al 20 son:" << endl;
 
 
     for (int i = 2; i <= 20; i += 2) {
-        cout << i << endl; // Imprimir el número par actual
+        cout << i << endl;
     }
 }
-int ejercicio22() {
+//programa con void
+void ejercicio22() {
     int numero;
-    cout<<"Ejercicio 22 FOR"<<endl;
-    // Solicitar al usuario que ingrese un número
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Tabla de multiplicar de un numero"<<endl;
     cout << "Ingresa un numero: ";
     cin >> numero;
 
@@ -388,200 +386,248 @@ int ejercicio22() {
 
     // Bucle for para imprimir la tabla de multiplicar del número
     for (int i = 1; i <= 10; i++) {
-        cout << numero << " x " << i << " = " << numero * i << endl; // Imprimir el resultado de la multiplicación
+        cout << numero << " x " << i << " = " << numero * i << endl;
     }
 }
-
+//programa con int
 int ejercicio23() {
     int x;
-    int suma = 0; // Variable para almacenar la suma de los números pares
-    cout<<"Ejercicio 23 FOR"<<endl;
-    // Solicitar al usuario que ingrese un número entero positivo
+    int suma = 0;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Calcule la suma de todos los numeros pares hasta el ingresado"<<endl;
     cout << "Ingresa un numero entero positivo: ";
     cin >> x;
 
-    // Verificar que el número ingresado sea positivo
     if (x <= 0) {
         cout << "Por favor, ingresa un numero entero positivo." << endl;
-        return 1; // Salir del programa si el número no es positivo
+        return 1;
     }
 
     // Bucle for para calcular la suma de los números pares desde 1 hasta n
     for (int i = 2; i <= x; i += 2) {
-        suma += i; // Sumar el número par actual
+        suma += i;
     }
 
-    // Mostrar el resultado
-    cout << "La suma de los numeros pares desde 1 hasta " << x << " es: " << suma << endl;
-}
 
+    cout << "La suma de los numeros pares desde 1 hasta " << x << " es: " << suma << endl;
+
+    return 0;
+}
+//programa con int
 int ejercicio24() {
     int n1;
     long long factorial = 1;
-    cout << "Ejercicio 24 FOR" << endl;
-    // Solicitar al usuario que ingrese un número entero no negativo
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determine el factorial de un numero"<<endl;
     cout << "Ingresa un numero entero no negativo: ";
     cin >> n1;
 
-    // Verificar que el número ingresado sea no negativo
+
     if (n1 < 0) {
         cout << "El factorial no esta definido para numeros negativos." << endl;
-        return -1;
+        return 1; // Salir del programa si el número es negativo
     }
 
-    // Bucle for para calcular el factorial
+
     for (int i = 1; i <= n1; i++) {
-        factorial *= i; // Multiplicar el factorial por el número actual
+        factorial *= i;
     }
+
 
     cout << "El factorial de " << n1 << " es: " << factorial << endl;
-}
 
-int ejercicio25() {
-    cout<<"Ejercicio 25 FOR"<<endl;
+    return 0;
+}
+//programa con void
+void ejercicio25() {
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     cout << "Los numeros primos del 1 al 50 son:" << endl;
 
-    // Bucle para imprimir los números primos del 1 al 50
-    for (int num = 2; num <= 50; num++) { // Comenzamos desde 2, ya que 1 no es primo
-        bool esPrimo = true; // Suponemos que el número es primo
 
-        // Verificamos si num es primo
-        for (int i = 2; i * i <= num; i++) { // Solo necesitamos verificar hasta la raíz cuadrada de num
+    for (int num = 2; num <= 50; num++) {
+        bool esPrimo = true;
+
+
+        for (int i = 2; i * i <= num; i++) {
             if (num % i == 0) {
-                esPrimo = false; // Si es divisible, no es primo
-                break; // Salimos del bucle
+                esPrimo = false;
+                break;
             }
         }
 
-        // Si es primo, lo imprimimos
+
         if (esPrimo) {
             cout << num << " ";
         }
     }
 
-    cout << endl; // Salto de línea al final
+    cout << endl;
 }
+//programa con int
 int ejercicio26() {
     int z;
-    cout<<"Ejercicio 26 FOR"<<endl;
-    // Solicitar al usuario que ingrese un número entero positivo
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determine la serie"<<endl;
     cout << "Ingresa un número entero positivo: ";
     cin >> z;
 
-    // Inicializar la variable para la suma de los números triangulares
+
     int suma = 0;
 
     cout << "La serie de números triangulares hasta " << z << " es:" << endl;
 
-    // Bucle for para calcular e imprimir la serie de números triangulares
+
     for (int i = 1; suma <= z; i++) {
-        suma += i; // Sumar el número actual
-        // Imprimir el número triangular actual solo si es menor o igual a n
-        cout << suma * (suma <= z) << " "; // Multiplicamos por 1 si suma es menor o igual a n, de lo contrario por 0
+        suma += i;
+
+        cout << suma * (suma <= z) << " ";
     }
 
-    cout << endl; // Salto de línea al final
+    cout << endl;
+
+    return 0;
 }
-int ejercicio27() {
-    int n2 = 10; // Número de términos de la serie Fibonacci a imprimir
-    int d = 0;  // Primer término
-    int e = 1;  // Segundo término
-    cout<<"Ejercicio 27 FOR"<<endl;
+//programa con void
+void ejercicio27() {
+    int n2 = 10;
+    int d = 0;
+    int e = 1;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     cout << "Los primeros " << n2 << " terminos de la serie Fibonacci son:" << endl;
 
-    // Bucle for para calcular e imprimir los términos de la serie Fibonacci
+
     for (int i = 0; i < n2; i++) {
-        cout << d << " "; // Imprimir el término actual
-        int siguiente = d + e; // Calcular el siguiente término
-        d = e; // Actualizar a para el siguiente término
-        e = siguiente; // Actualizar b para el siguiente término
+        cout << d << " ";
+        int siguiente = d + e;
+        d = e;
+        e = siguiente;
     }
 
-    cout << endl; // Salto de línea al final
+    cout << endl;
 }
-int ejercicio28() {
+//programa con void
+void ejercicio28() {
     int suma = 0;
-    cout<<"Ejercicio 28 FOR"<<endl;
-    // Bucle for para sumar los primeros 100 números naturales
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     for (int i = 1; i <= 100; i++) {
-        suma += i; // Sumar el número actual a la suma total
+        suma += i;
     }
 
-    // Imprimir el resultado
+
     cout << "La suma de los primeros 100 numeros naturales es: " << suma << endl;
 }
-
+//programa con int
 int ejercicio29() {
     int aj;
-    cout<<"Ejercicio 29 FOR"<<endl;
-    // Solicitar al usuario que ingrese un número entero
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
+    cout<<"Determine todos los divisores de un numero"<<endl;
     cout << "Ingresa un numero entero positivo: ";
     cin >> aj;
 
-    // Verificar que el número ingresado sea positivo
+
     if (aj <= 0) {
         cout << "Por favor, ingresa un numero entero positivo." << endl;
-        return -1;
+        return 1;
     }
 
     cout << "Los divisores de " << aj << " son:" << endl;
 
-    // Bucle for para encontrar e imprimir los divisores del número
+
     for (int i = 1; i <= aj; i++) {
-        if (aj % i == 0) { // Verificar si i es un divisor de numero
-            cout << i << " "; // Imprimir el divisor
+        if (aj % i == 0) {
+            cout << i << " ";
         }
     }
 
-    cout << endl; // Salto de línea al final
+    cout << endl;
+
+    return 0;
 }
-int ejercicio30() {
-    int count = 0; // Contador de números primos encontrados
-    int num = 2;   // Primer número a verificar
-    cout<<"Ejercicio 30 FOR"<<endl;
+//programa con void
+void ejercicio30() {
+    int count = 0;
+    int num = 2;
+
+    cout<<"BIENVENIDO AL PROGRAMA"<<endl;
     cout << "Los primeros 10 numeros primos son:" << endl;
 
-    // Bucle for para encontrar los primeros 10 números primos
-    for (count = 0; count < 10; num++) {
-        bool esPrimo = true; // Suponemos que el número es primo
 
-        // Verificar si num es primo
+    for (count = 0; count < 10; num++) {
+        bool esPrimo = true;
+
+
         for (int i = 2; i * i <= num; i++) {
             if (num % i == 0) {
-                esPrimo = false; // No es primo si es divisible
-                break; // Salir del bucle si encontramos un divisor
+                esPrimo = false;
+                break;
             }
         }
 
-        // Si es primo, imprimirlo y aumentar el contador
+
         if (esPrimo) {
             cout << num << " ";
-            count++; // Aumentar el contador de números primos encontrados
+            count++;
         }
     }
 
-    cout << endl; // Salto de línea al final
+    cout << endl;
 }
 
 int main() {
     int opc;
+
     do {
-        cout<<"\t MENU "<<endl;
-        cout<<"Seleccione una opcion"<<endl;
-        cout<<"1. Elija un programa del 1 al 30"<<endl;
+        cout <<"\t MENU  "<<endl;
+        cout<<"Selecciona una opcion"<<endl;
+        cout<<"1. Elije un programa del 1 al 30"<<endl;
         cout<<"2. Salir"<<endl;
         cin>>opc;
 
         if (opc == 1) {
-            int ejercicio;
-            cout<<"Ingrese el numero del programa (1-30)"<<endl;
-            cin>>ejercicio;
-            Menu(ejercicio);
+            cout <<"Ingrese un numero (1-30): "<<endl;
+            cin>>opc;
+
+            switch (opc) {
+                case 1: ejercicio1(); break;
+                case 2: ejercicio2(); break;
+                case 3: ejercicio3(); break;
+                case 4: ejercicio4(); break;
+                case 5: ejercicio5(); break;
+                case 6: ejercicio6(); break;
+                case 7: ejercicio7(); break;
+                case 8: ejercicio8(); break;
+                case 9: ejercicio9(); break;
+                case 10: ejercicio10(); break;
+                case 11: ejercicio11(); break;
+                case 12: ejercicio12(); break;
+                case 13: ejercicio13(); break;
+                case 14: ejercicio14(); break;
+                case 15: ejercicio15(); break;
+                case 16: ejercicio16(); break;
+                case 17: ejercicio17(); break;
+                case 18: ejercicio18(); break;
+                case 19: ejercicio19(); break;
+                case 20: ejercicio20(); break;
+                case 21: ejercicio21(); break;
+                case 22: ejercicio22(); break;
+                case 23: ejercicio23(); break;
+                case 24: ejercicio24(); break;
+                case 25: ejercicio25(); break;
+                case 26: ejercicio26(); break;
+                case 27: ejercicio27(); break;
+                case 28: ejercicio28(); break;
+                case 29: ejercicio29(); break;
+                case 30: ejercicio30(); break;
+                default: cout<<"Esta opcion no existe"<<endl;
+            }
         }
-    }while (opc!=2);
+
+    }while (opc !=2);
     return 0;
 }
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
